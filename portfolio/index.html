@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ee">
+  <meta name="keywords" content="Surya Gowtham R, web developer, B.Sc Computer Science, HTML, CSS, JavaScript, portfolio">
+  <meta name="description" content="Surya Gowtham R. — Aspiring Web Developer and B.Sc. Computer Science student at KG College of Arts and Science.">
+  <title>Surya Gowtham R. | Web Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Surya Gowtham home">sg<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+        <button class="theme-toggle" id="themeToggle"
+          type="button" aria-label="Switch to dark mode"
+          title="Toggle color theme">
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          ASPIRING WEB DEVELOPER
+        </p>
+
+        <h1>
+          Hello, I'm Surya.<br>
+          <span class="accent-text">I build things for the web.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm <strong>Surya Gowtham R.</strong>, a B.Sc. Computer Science
+          student at KG College of Arts and Science. I'm learning to create
+          clean, responsive and useful websites using HTML, CSS and JavaScript.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore my work <span aria-hidden="true">↗</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get in touch ↓
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>B.Sc. Computer Science</span>
+          <span class="meta-divider"></span>
+          <span>Learning by building</span>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/Suryagowtham58"
+             target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+          <a href="mailto:25bcs058@kgcas.com">
+            Email ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Animated profile hero -->
+      <div class="hero-art profile-art reveal" aria-label="Animated profile photo">
+        <div class="profile-orbit orbit-one"></div>
+        <div class="profile-orbit orbit-two"></div>
+        <div class="profile-orbit orbit-three"></div>
+
+        <div class="profile-photo-wrap" id="profilePhoto">
+          <div class="photo-shine"></div>
+          <img class="profile-photo" src="profile.png" alt="Surya Gowtham R." loading="eager">
+        </div>
+
+        <div class="profile-chip chip-code"><span>💻</span> Building</div>
+        <div class="profile-chip chip-goal"><span>🚀</span> Learning</div>
+        <div class="profile-chip chip-student"><span>🎓</span> B.Sc. CS</div>
+
+        <span class="profile-spark spark-one">✦</span>
+        <span class="profile-spark spark-two">✳</span>
+        <span class="profile-spark spark-three">✦</span>
+        <span class="profile-caption">DESIGN · CODE · REACT</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>A little about <span class="accent-text">me.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-intro reveal">
+          <p class="large-copy">
+            I'm a student learning to turn ideas into experiences on the web.
+          </p>
+        </div>
+
+        <div class="about-details reveal">
+          <p>
+            I'm Surya Gowtham R., pursuing B.Sc. Computer Science at
+            KG College of Arts and Science.
+          </p>
+
+          <p>
+            I'm exploring front-end web development and learning how HTML,
+            CSS and JavaScript work together to create interactive websites.
+          </p>
+
+          <p>
+            Building personal projects helps me practise what I learn,
+            understand problems and improve my coding skills step by step.
+          </p>
+
+          <p>
+            My current goal is to keep learning, build more useful projects
+            and grow as a web developer.
+          </p>
+
+          <p class="edit-note">
+            Personal introduction: Edit this section to include your real
+            interests, experience and future goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / SKILLS</p>
+          <h2>Tools of my <span class="accent-text">trade.</span></h2>
+          <p class="section-description">
+            The core web technologies I'm learning and using in my projects.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-number">01</span>
+            <span class="skill-symbol">5</span>
+            <h3>HTML</h3>
+            <p>Building structured pages with semantic and accessible content.</p>
+            <span class="skill-tag">STRUCTURE</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-number">02</span>
+            <span class="skill-symbol css-symbol">#</span>
+            <h3>CSS</h3>
+            <p>Creating responsive layouts, styling and visual experiences.</p>
+            <span class="skill-tag">DESIGN</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-number">03</span>
+            <span class="skill-symbol js-symbol">JS</span>
+            <h3>JavaScript</h3>
+            <p>Adding interactions, handling events and updating page content.</p>
+            <span class="skill-tag">INTERACTION</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Ideas into <span class="accent-text">projects.</span></h2>
+        <p class="section-description">
+          Three projects I've built while learning front-end web development.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 01: Weather Dashboard -->
+        <article class="project-card reveal">
+          <a class="project-visual visual-one"
+             href="https://weather-dashboard-surya.netlify.app/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Open Weather Dashboard live website">
+            <span class="visual-label">01 — WEATHER</span>
+            <div class="project-illustration">
+              <span class="weather-emoji" aria-hidden="true">☀</span>
+              <span class="illustration-title">Weather<br>Dashboard</span>
+              <span class="illustration-caption">CHECK THE FORECAST</span>
+            </div>
+            <span class="visual-open">↗</span>
+          </a>
+
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="project-type">HTML · CSS · JS</span>
+              <span class="project-status">01 / 03</span>
+            </div>
+            <h3>Weather Dashboard</h3>
+            <p>
+              A weather website for searching cities and viewing current
+              weather information.
+            </p>
+            <div class="project-links">
+              <a href="https://weather-dashboard-surya.netlify.app/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">
+                Live demo ↗
+              </a>
+              <a href="https://github.com/Suryagowtham58"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">
+                GitHub profile ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02: RecipeNest -->
+        <article class="project-card reveal">
+          <a class="project-visual visual-two"
+             href="https://stately-semolina-bd8eea.netlify.app/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Open RecipeNest live website">
+            <span class="visual-label">02 — FOOD & RECIPES</span>
+            <div class="project-illustration">
+              <span class="recipe-emoji" aria-hidden="true">✳</span>
+              <span class="illustration-title">Recipe<br>Nest</span>
+              <span class="illustration-caption">A PLACE FOR FOOD IDEAS</span>
+            </div>
+            <span class="visual-open">↗</span>
+          </a>
+
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="project-type">HTML · CSS · JS</span>
+              <span class="project-status">02 / 03</span>
+            </div>
+            <h3>RecipeNest</h3>
+            <p>
+              A recipe-themed website for exploring food ideas and
+              presenting recipe information.
+            </p>
+            <div class="project-links">
+              <a href="https://stately-semolina-bd8eea.netlify.app/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">
+                Live demo ↗
+              </a>
+              <a href="https://github.com/Suryagowtham58"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">
+                GitHub profile ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: FocusFlow -->
+        <article class="project-card reveal">
+          <a class="project-visual visual-three"
+             href="https://focus-flow-surya.netlify.app/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Open FocusFlow live website">
+            <span class="visual-label">03 — PRODUCTIVITY</span>
+            <div class="project-illustration">
+              <span class="focus-emoji" aria-hidden="true">◷</span>
+              <span class="illustration-title">Focus<br>Flow</span>
+              <span class="illustration-caption">MAKE TIME FOR WHAT MATTERS</span>
+            </div>
+            <span class="visual-open">↗</span>
+          </a>
+
+          <div class="project-content">
+            <div class="project-topline">
+              <span class="project-type">HTML · CSS · JS</span>
+              <span class="project-status">03 / 03</span>
+            </div>
+            <h3>FocusFlow</h3>
+            <p>
+              A productivity-focused project designed around focus sessions
+              and managing study time.
+            </p>
+            <div class="project-links">
+              <a href="https://focus-flow-surya.netlify.app/"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">
+                Live demo ↗
+              </a>
+              <a href="https://github.com/Suryagowtham58"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">
+                GitHub profile ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="github-banner reveal">
+        <div>
+          <p class="eyebrow">MORE ON GITHUB</p>
+          <h3>More learning. More building.</h3>
+        </div>
+        <a class="btn btn-secondary"
+           href="https://github.com/Suryagowtham58"
+           target="_blank" rel="noopener noreferrer">
+          Visit my GitHub ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">04 / GET IN TOUCH</p>
+          <h2>Have an idea?<br><span class="accent-text">Let's connect.</span></h2>
+          <p>
+            Interested in web development, projects or sharing ideas?
+            Feel free to get in touch.
+          </p>
+          <a class="email-link" href="mailto:25bcs058@kgcas.com">
+            25bcs058@kgcas.com ↗
+          </a>
+          <a class="github-contact"
+             href="https://github.com/Suryagowtham58"
+             target="_blank" rel="noopener noreferrer">
+            Explore my GitHub profile ↗
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="senderName">Your name</label>
+          <input type="text" id="senderName" name="name"
+            placeholder="Enter your name" autocomplete="name" required>
+
+          <label for="senderEmail">Your email</label>
+          <input type="email" id="senderEmail" name="email"
+            placeholder="you@example.com" autocomplete="email" required>
+
+          <label for="senderMessage">Your message</label>
+          <textarea id="senderMessage" name="message"
+            placeholder="Write your message..." rows="4" required></textarea>
+
+          <button class="btn btn-primary submit-btn" type="submit">
+            Prepare email ↗
+          </button>
+
+          <p class="form-note" id="formNote" aria-live="polite">
+            Your email app will open so you can review and send the message.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fun live reactions -->
+  <div class="reaction-dock" id="reactionDock" aria-label="Live reactions">
+    <div class="reaction-live"><span class="reaction-live-dot"></span><span>LIVE REACTIONS</span><strong id="reactionTotal">0</strong></div>
+    <div class="reaction-buttons">
+      <button class="reaction-btn" data-reaction="❤️" aria-label="Love">❤️</button>
+      <button class="reaction-btn" data-reaction="🔥" aria-label="Fire">🔥</button>
+      <button class="reaction-btn" data-reaction="😂" aria-label="Funny">😂</button>
+      <button class="reaction-btn" data-reaction="👏" aria-label="Applause">👏</button>
+      <button class="reaction-btn" data-reaction="🚀" aria-label="Rocket">🚀</button>
+      <button class="reaction-btn" data-reaction="🤩" aria-label="Amazing">🤩</button>
+    </div>
+    <div class="reaction-counts" id="reactionCounts" aria-live="polite"></div>
+  </div>
+  <div class="emoji-layer" id="emojiLayer" aria-hidden="true"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">sg<span>.</span></a>
+      <p>Designed & built by Surya Gowtham R.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+      <p class="copyright">
+        © <span id="currentYear"></span> Surya Gowtham R.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
